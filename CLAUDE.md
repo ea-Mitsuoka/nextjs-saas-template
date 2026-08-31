@@ -11,7 +11,7 @@ Authority: guardrails > security > this file and `AGENTS.md` > other `.ai/` rule
 | Field | Value |
 |-------|-------|
 | Project | nextjs-saas-template — see [.ai/mission.md](.ai/mission.md) |
-| Stack | Next.js (App Router) + TypeScript + Prisma/PostgreSQL(RLS) + Clerk + Stripe; deploys to Cloud Run via [gcp-cicd-workflows](https://github.com/Yukihide-Mitsuoka/gcp-cicd-workflows) `@v1` |
+| Stack | Next.js (App Router) + TypeScript + Prisma/PostgreSQL(RLS) + Clerk + Stripe; deploys to Cloud Run via [gcp-cicd-workflows](https://github.com/ea-Mitsuoka/gcp-cicd-workflows) `@v1` |
 | Architecture | Modular monolith, Clean Architecture, DDD — [.ai/architecture.md](.ai/architecture.md); one SaaS feature = one `src/modules/<feature>/` bounded context; `src/app/` stays a thin routing shell |
 | Branching | GitHub Flow; `main` always releasable |
 | Versioning | SemVer via Conventional Commits (automated) |

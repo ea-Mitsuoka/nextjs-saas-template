@@ -27,7 +27,7 @@ ai-dev-foundation ──sync──▶ nextjs-saas-template ──sync──▶ y
 | Building a SaaS app? | "Use this template" **here** |
 | Pure infrastructure project? | Use [terraform-gcp-template](https://github.com/ea-Mitsuoka/terraform-gcp-template) |
 | Neither (plain project)? | Use [ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation) directly |
-| Deploy pipeline | Referenced from [gcp-cicd-workflows](https://github.com/Yukihide-Mitsuoka/gcp-cicd-workflows) `@v1` — never copied |
+| Deploy pipeline | Referenced from [gcp-cicd-workflows](https://github.com/ea-Mitsuoka/gcp-cicd-workflows) `@v1` — never copied |
 | Base updates | Arrive as sync PRs (template-sync, manual trigger any time); downstream repoints its sync source to THIS repo |
 
 ## Stack and architecture decisions (fixed by design)
@@ -56,6 +56,6 @@ migrations and the Clerk webhook sync (which must write across tenant boundaries
    instance; fill `.env` from [.env.example](.env.example).
 5. **Install gates**: `make setup`; verify with `make doctor && make lint && make test`.
 6. **Wire deploy**: provision `github-oidc` (see
-   [gcp-cicd-workflows setup](https://github.com/Yukihide-Mitsuoka/gcp-cicd-workflows#setup-once-per-consumer-repo)),
+   [gcp-cicd-workflows setup](https://github.com/ea-Mitsuoka/gcp-cicd-workflows#setup-once-per-consumer-repo)),
    copy its example callers.
 7. Point your agent at the repo and assign it an issue.
