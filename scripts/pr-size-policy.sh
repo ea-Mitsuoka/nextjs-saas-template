@@ -39,11 +39,11 @@ echo "Changed lines excluding lockfiles: $total, files: $authored_files"
 
 is_authenticated_sync=false
 if [ "$PR_AUTHOR" = 'github-actions[bot]' ] \
-  && [ "$TARGET_REPO" = 'Yukihide-Mitsuoka/nextjs-saas-template' ] \
+  && [ "$TARGET_REPO" = 'ea-Mitsuoka/nextjs-saas-template' ] \
   && [ "$HEAD_REPO" = "$TARGET_REPO" ] \
   && [[ "$HEAD_REF" =~ ^chore/template_sync_[0-9a-f]{7,40}$ ]] \
   && [ "$BASE_REF" = 'main' ] \
-  && grep -Eq '^Direct-parent-source: https://github\.com/Yukihide-Mitsuoka/ai-dev-foundation@[0-9a-f]{40}$' <<<"$PR_BODY"; then
+  && grep -Eq '^Direct-parent-source: https://github\.com/ea-Mitsuoka/ai-dev-foundation@[0-9a-f]{40}$' <<<"$PR_BODY"; then
   is_authenticated_sync=true
 fi
 

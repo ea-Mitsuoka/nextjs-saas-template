@@ -5,8 +5,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[2]
-TEMPLATE_REPOSITORY = "Yukihide-Mitsuoka/nextjs-saas-template"
-TEMPLATE_ROOT = ".ai/contracts/templates/yukihide-mitsuoka/nextjs-saas-template/"
+TEMPLATE_REPOSITORY = "ea-Mitsuoka/nextjs-saas-template"
+TEMPLATE_ROOT = ".ai/contracts/templates/ea-mitsuoka/nextjs-saas-template/"
 TEMPLATE_OVERLAY = ROOT / TEMPLATE_ROOT / "agent-overlay.md"
 TEMPLATE_EXPORT = ROOT / TEMPLATE_ROOT / "inheritance-export.json"
 MODULE_PATH = ROOT / "scripts/template_inheritance.py"
@@ -17,7 +17,7 @@ SPEC.loader.exec_module(inheritance)
 EXPECTED_INPUTS = [
     {
         "layer": "foundation",
-        "repository": "Yukihide-Mitsuoka/ai-dev-foundation",
+        "repository": "ea-Mitsuoka/ai-dev-foundation",
         "path": ".ai/contracts/foundation/agent-entry.md",
     },
     {

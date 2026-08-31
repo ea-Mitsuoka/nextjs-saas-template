@@ -50,7 +50,7 @@ class TemplateSyncWorkflowTest(unittest.TestCase):
 
         self.assertIn("id: template-sync", workflow)
         self.assertIn("steps.template-sync.outputs.pr_branch", workflow)
-        self.assertIn('SOURCE_REPOSITORY: "Yukihide-Mitsuoka/ai-dev-foundation"', workflow)
+        self.assertIn('SOURCE_REPOSITORY: "ea-Mitsuoka/ai-dev-foundation"', workflow)
         self.assertIn('gh api "repos/${SOURCE_REPOSITORY}/commits/${SOURCE_SHORT}"', workflow)
         self.assertIn("gh pr edit", workflow)
 

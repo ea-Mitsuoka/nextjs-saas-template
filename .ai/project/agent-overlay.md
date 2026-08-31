@@ -10,7 +10,7 @@ read_when: [agent-entry]
 This protected project layer contains repository identity and stack facts only. The
 explicit agent profile loads it after the inherited foundation contract.
 
-- Repository: `Yukihide-Mitsuoka/nextjs-saas-template`.
+- Repository: `ea-Mitsuoka/nextjs-saas-template`.
 - Role: reusable SaaS application template for Next.js services.
 - Stack: Next.js App Router, TypeScript, Prisma with PostgreSQL row-level security,
   Clerk authentication, and Stripe billing.

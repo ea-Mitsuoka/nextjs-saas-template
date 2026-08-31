@@ -1,12 +1,12 @@
 # nextjs-saas-template
 
-<!-- repository-readme-owner: Yukihide-Mitsuoka/nextjs-saas-template -->
+<!-- repository-readme-owner: ea-Mitsuoka/nextjs-saas-template -->
 
 **Production-ready SaaS starter on the ai-dev-foundation base** — a template repository
 for B2B/B2C SaaS where AI agents are the primary developers. It layers a Next.js SaaS
 foundation (multi-tenant PostgreSQL RLS, org-scoped RBAC, Clerk auth, Stripe billing,
 Cloud Run delivery) on top of everything
-[ai-dev-foundation](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation) provides
+[ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation) provides
 (rules, guardrails, skills, hooks, CI).
 
 > **AI agents:** stop reading this file. Your entry point is [CLAUDE.md](CLAUDE.md)
@@ -25,8 +25,8 @@ ai-dev-foundation ──sync──▶ nextjs-saas-template ──sync──▶ y
 | Decision | Rule |
 |----------|------|
 | Building a SaaS app? | "Use this template" **here** |
-| Pure infrastructure project? | Use [terraform-gcp-template](https://github.com/Yukihide-Mitsuoka/terraform-gcp-template) |
-| Neither (plain project)? | Use [ai-dev-foundation](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation) directly |
+| Pure infrastructure project? | Use [terraform-gcp-template](https://github.com/ea-Mitsuoka/terraform-gcp-template) |
+| Neither (plain project)? | Use [ai-dev-foundation](https://github.com/ea-Mitsuoka/ai-dev-foundation) directly |
 | Deploy pipeline | Referenced from [gcp-cicd-workflows](https://github.com/Yukihide-Mitsuoka/gcp-cicd-workflows) `@v1` — never copied |
 | Base updates | Arrive as sync PRs (template-sync, manual trigger any time); downstream repoints its sync source to THIS repo |
 
@@ -49,7 +49,7 @@ migrations and the Clerk webhook sync (which must write across tenant boundaries
 
 1. **Create the repo**: GitHub → "Use this template".
 2. **Repoint template sync**: in `.github/workflows/template-sync.yml`, set
-   `source_repo_path` to `Yukihide-Mitsuoka/nextjs-saas-template`; set repo variable
+   `source_repo_path` to `ea-Mitsuoka/nextjs-saas-template`; set repo variable
    `TEMPLATE_SYNC_ENABLED=true`.
 3. **Replace placeholders**: `grep -rn "{{" . --exclude-dir=.git --exclude-dir=node_modules`.
 4. **Configure services**: Clerk app + webhook endpoint, Stripe account, Cloud SQL
