@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v1.2.2...v2.0.0) (2026-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **inheritance:** a child bootstrapped from this template now inherits .ai/contracts/templates/ea-mitsuoka/nextjs-saas-template/ and records ea-Mitsuoka/nextjs-saas-template as its direct parent.
+
+### Miscellaneous Chores
+
+* **inheritance:** repoint direct parent and identity to ea-Mitsuoka ([6409e3a](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/6409e3a6b81a933e4045c1ae428e28a41a8881bf)), closes [#1](https://github.com/ea-Mitsuoka/nextjs-saas-template/issues/1)
+
 ## [1.2.2](https://github.com/Yukihide-Mitsuoka/nextjs-saas-template/compare/v1.2.1...v1.2.2) (2026-08-30)
 
 
