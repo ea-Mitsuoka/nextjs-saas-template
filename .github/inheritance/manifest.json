@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "parent": {
-    "repository": "Yukihide-Mitsuoka/ai-dev-foundation",
+    "repository": "ea-Mitsuoka/ai-dev-foundation",
     "branch": "main"
   },
   "lock_file": ".github/inheritance/lock.json",
@@ -73,7 +73,7 @@
     "scripts/tests/test_workflow_dependency_pins.py"
   ],
   "protected_paths": [
-    ".ai/contracts/templates/yukihide-mitsuoka/nextjs-saas-template/",
+    ".ai/contracts/templates/ea-mitsuoka/nextjs-saas-template/",
     ".ai/architecture.md",
     ".ai/coding-rules.md",
     ".ai/decision-log.md",

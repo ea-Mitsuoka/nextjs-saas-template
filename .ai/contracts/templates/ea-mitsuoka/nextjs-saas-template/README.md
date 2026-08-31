@@ -7,7 +7,7 @@ updated: 2026-08-14
 # Next.js SaaS Family Child Contract
 
 `inheritance-export.json` is the machine-readable ownership and agent-input contract for
-new direct children of `Yukihide-Mitsuoka/nextjs-saas-template`. The Foundation
+new direct children of `ea-Mitsuoka/nextjs-saas-template`. The Foundation
 `bootstrap-child` command reads this file from the exact parent source commit.
 
 The export passes the Foundation contract and this Next.js SaaS family overlay to a

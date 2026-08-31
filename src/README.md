@@ -28,7 +28,7 @@ internals — cross-module calls use the target's MODULE.md public API or events
 The reference module for this template is `modules/identity/` (Clerk webhook sync +
 authorization), landing with the SaaS foundation. **Imitate its shape** (COD-050). The
 base template's language-agnostic worked example lives upstream:
-[ai-dev-foundation `src/modules/catalog/`](https://github.com/Yukihide-Mitsuoka/ai-dev-foundation/tree/main/src/modules/catalog).
+[ai-dev-foundation `src/modules/catalog/`](https://github.com/ea-Mitsuoka/ai-dev-foundation/tree/main/src/modules/catalog).
 
 This template adds one layout rule on top of ARC-001: `src/app/` (Next.js App Router) is
 a **thin routing shell** — pages and route files delegate to `modules/*/interface` and
