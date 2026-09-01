@@ -2,9 +2,9 @@
   "schema_version": 2,
   "repositories": [
     {
-      "repository": "Yukihide-Mitsuoka/nextjs-saas-template",
+      "repository": "ea-Mitsuoka/nextjs-saas-template",
       "directory": "nextjs-saas-template",
-      "parent_repository": "Yukihide-Mitsuoka/ai-dev-foundation",
+      "parent_repository": "ea-Mitsuoka/ai-dev-foundation",
       "parent_directory": "ai-dev-foundation",
       "lifecycle": "active",
       "reason": "maintained Next.js family template"
@@ -14,13 +14,13 @@
       "directory": "repchat",
       "parent_repository": "Yukihide-Mitsuoka/ai-dev-foundation",
       "parent_directory": "ai-dev-foundation",
-      "lifecycle": "active",
-      "reason": "maintained application repository"
+      "lifecycle": "retired",
+      "reason": "retired on the Yukihide-Mitsuoka account and deliberately not migrated to ea-Mitsuoka; unreachable from the maintaining account (HTTP 404, LOG-0042), so no inheritance can be audited or synchronized, and its parent is the former account foundation that ADR-0019 separated from this one"
     },
     {
-      "repository": "Yukihide-Mitsuoka/secure-ga4-bq-template",
+      "repository": "ea-Mitsuoka/secure-ga4-bq-template",
       "directory": "secure-ga4-bq-template",
-      "parent_repository": "Yukihide-Mitsuoka/terraform-gcp-template",
+      "parent_repository": "ea-Mitsuoka/terraform-gcp-template",
       "parent_directory": "terraform-gcp-template",
       "lifecycle": "active",
       "reason": "maintained Terraform family project"
@@ -28,15 +28,15 @@
     {
       "repository": "ea-Mitsuoka/secure-ai-controls",
       "directory": "secure-ai-controls",
-      "parent_repository": "Yukihide-Mitsuoka/terraform-gcp-template",
+      "parent_repository": "ea-Mitsuoka/terraform-gcp-template",
       "parent_directory": "terraform-gcp-template",
       "lifecycle": "paused",
       "reason": "updates paused because owner-level company account access is unavailable"
     },
     {
-      "repository": "Yukihide-Mitsuoka/terraform-gcp-template",
+      "repository": "ea-Mitsuoka/terraform-gcp-template",
       "directory": "terraform-gcp-template",
-      "parent_repository": "Yukihide-Mitsuoka/ai-dev-foundation",
+      "parent_repository": "ea-Mitsuoka/ai-dev-foundation",
       "parent_directory": "ai-dev-foundation",
       "lifecycle": "active",
       "reason": "maintained Terraform family template"
@@ -47,7 +47,7 @@
       "parent_repository": "Yukihide-Mitsuoka/ai-dev-foundation",
       "parent_directory": "ai-dev-foundation",
       "lifecycle": "retired",
-      "reason": "replaced by Yukihide-Mitsuoka/repchat"
+      "reason": "replaced by Yukihide-Mitsuoka/repchat; retired on the Yukihide-Mitsuoka account and deliberately not migrated"
     }
   ]
 }
