@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.0...v2.0.1) (2026-09-02)
+
+
+### Bug Fixes
+
+* **ci:** keep contents permission on the protected private-repo jobs ([146c247](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/146c247e098c7c9d7d996bc0e3460caee0dc56de))
+* **ci:** stop the scheduled secret scan flagging the Clerk build placeholder ([b7e4c94](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/b7e4c9431c4756c63bcb88c20c083399098c37c3))
+* **ci:** stop the scheduled secret scan flagging the Clerk build placeholder ([7ee4640](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/7ee4640dbfe3e6ba7584058ec2759b5810e05696)), closes [#8](https://github.com/ea-Mitsuoka/nextjs-saas-template/issues/8)
+* **ci:** unblock inheritance acceptance at the workflow and ownership boundaries ([fa28066](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/fa2806624d86beaea67d10c00a0932e432f87f40))
+
 ## [2.0.0](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v1.2.2...v2.0.0) (2026-08-31)
 
 
