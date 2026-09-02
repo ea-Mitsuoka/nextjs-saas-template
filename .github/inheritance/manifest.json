@@ -64,6 +64,7 @@
     "scripts/tests/test_readme_ownership.py",
     "scripts/tests/test_template_inheritance.py",
     "scripts/tests/test_template_inheritance_plan.py",
+    "scripts/tests/test_template_inheritance_adopt.py",
     "scripts/tests/test_template_sync_auth.py",
     "scripts/tests/test_local_workflow_actions.py",
     "scripts/tests/test_makefile_profile.py",
