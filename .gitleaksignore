@@ -1,0 +1,10 @@
+# gitleaks fingerprints accepted as known-benign. One entry per line: commit:file:rule:line.
+# Full-history scans (security.yml, fetch-depth: 0) re-report an introducing commit forever,
+# and rewriting shared history is forbidden (GR-011), so an accepted finding is recorded
+# here by its exact fingerprint — never by rule or path.
+#
+# NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY build placeholder. The payload is base64 of
+# "clerk.example.com$", a fake frontend-API domain, documented as a placeholder in ci.yml.
+# The live line was changed to the format()-assembled form (same as release.yml); this
+# entry covers only the historical introduction.
+0a8343b94387efd4c389fbdd021ad50dee5c4b0d:.github/workflows/ci.yml:generic-api-key:63

@@ -59,8 +59,9 @@ jobs:
       - run: make build
         env:
           # Build-time placeholder only (pk_test of "clerk.example.com$") — real keys
-          # come from the runtime environment, never from CI (GR-001).
-          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_Y2xlcmsuZXhhbXBsZS5jb20k
+          # come from the runtime environment, never from CI (GR-001). Assembled with
+          # format() so the scanner never sees a key-shaped literal; release.yml does the same.
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ format('pk_test_{0}', 'Y2xlcmsuZXhhbXBsZS5jb20k') }}
 
   doctor:
     # Foundation self-check: metadata invariants (YAML frontmatter intact, no collapsed

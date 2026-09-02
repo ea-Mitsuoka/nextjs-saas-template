@@ -93,6 +93,7 @@
     ".github/inheritance/agent-profile.json",
     ".github/workflows/",
     ".gitignore",
+    ".gitleaksignore",
     ".prettierignore",
     ".prettierrc.json",
     ".skills/architecture.skill.md",
