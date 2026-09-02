@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.1...v2.0.2) (2026-09-02)
+
+
+### Bug Fixes
+
+* **ci:** judge PR size against the current pull-request body ([cba4d54](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/cba4d543ca4d3f35f7af7fcfc9cec342412f9e2b))
+* **ci:** judge PR size against the current pull-request body ([d455c88](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/d455c88fe31feb3da63078f3f4d59f0a5ea66bdf))
+
 ## [2.0.1](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.0...v2.0.1) (2026-09-02)
 
 
