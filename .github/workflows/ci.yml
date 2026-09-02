@@ -107,6 +107,16 @@ jobs:
         run: |
           gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}/files?per_page=100" > "${RUNNER_TEMP}/pr-files.json"
           python3 scripts/pr_size_lockfile_stats.py "${RUNNER_TEMP}/pr-files.json" >> "${GITHUB_OUTPUT}"
+      - name: Resolve the current pull-request body
+        # The event payload freezes the body at creation. Template Sync records the
+        # direct-parent provenance seconds later, so a policy that reads the payload
+        # judges a body the pull request no longer has.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.body // ""' \
+            > "${RUNNER_TEMP}/pr-body.md"
       - name: PR size guard (GR-020)
         # ADR-0005 permits only an authenticated, same-repository foundation sync to
         # exceed the hard limit. The script is fail-closed and covered by negative tests.
@@ -122,5 +132,7 @@ jobs:
           TARGET_REPO: ${{ github.repository }}
           HEAD_REF: ${{ github.event.pull_request.head.ref }}
           BASE_REF: ${{ github.event.pull_request.base.ref }}
-          PR_BODY: ${{ github.event.pull_request.body }}
-        run: bash scripts/pr-size-policy.sh
+        run: |
+          PR_BODY="$(cat "${RUNNER_TEMP}/pr-body.md")"
+          export PR_BODY
+          bash scripts/pr-size-policy.sh
