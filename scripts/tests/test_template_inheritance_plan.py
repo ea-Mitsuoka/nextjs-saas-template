@@ -579,7 +579,7 @@ class TemplateInheritancePlanTest(unittest.TestCase):
         export = inheritance._validate_bootstrap_export(
             path,
             inheritance._read_json(REPOSITORY_ROOT, path),
-            "Yukihide-Mitsuoka/ai-dev-foundation",
+            "ea-Mitsuoka/ai-dev-foundation",
         )
 
         self.assertEqual(
@@ -609,51 +609,37 @@ class TemplateInheritancePlanTest(unittest.TestCase):
             },
             {
                 (
-                    "Yukihide-Mitsuoka/terraform-gcp-template",
+                    "ea-Mitsuoka/terraform-gcp-template",
                     "terraform-gcp-template",
-                    "Yukihide-Mitsuoka/ai-dev-foundation",
+                    "ea-Mitsuoka/ai-dev-foundation",
                     "ai-dev-foundation",
                     "active",
                 ),
                 (
-                    "Yukihide-Mitsuoka/nextjs-saas-template",
+                    "ea-Mitsuoka/nextjs-saas-template",
                     "nextjs-saas-template",
-                    "Yukihide-Mitsuoka/ai-dev-foundation",
+                    "ea-Mitsuoka/ai-dev-foundation",
                     "ai-dev-foundation",
                     "active",
                 ),
                 (
-                    "Yukihide-Mitsuoka/repchat",
-                    "repchat",
-                    "Yukihide-Mitsuoka/ai-dev-foundation",
-                    "ai-dev-foundation",
-                    "active",
-                ),
-                (
-                    "Yukihide-Mitsuoka/secure-ga4-bq-template",
+                    "ea-Mitsuoka/secure-ga4-bq-template",
                     "secure-ga4-bq-template",
-                    "Yukihide-Mitsuoka/terraform-gcp-template",
+                    "ea-Mitsuoka/terraform-gcp-template",
                     "terraform-gcp-template",
                     "active",
                 ),
                 (
                     "ea-Mitsuoka/secure-ai-controls",
                     "secure-ai-controls",
-                    "Yukihide-Mitsuoka/terraform-gcp-template",
+                    "ea-Mitsuoka/terraform-gcp-template",
                     "terraform-gcp-template",
-                    "paused",
-                ),
-                (
-                    "Yukihide-Mitsuoka/chat-chart",
-                    "chat-chart",
-                    "Yukihide-Mitsuoka/ai-dev-foundation",
-                    "ai-dev-foundation",
-                    "retired",
+                    "active",
                 ),
             },
         )
         self.assertTrue(all(item["reason"] for item in config["repositories"]))
-        self.assertEqual(len(config["repositories"]), 6)
+        self.assertEqual(len(config["repositories"]), 4)
 
     def test_fleet_report_rejects_duplicate_children_and_pair_limit(self):
         with self.assertRaisesRegex(inheritance.InheritanceError, "duplicate child"):
