@@ -40,6 +40,7 @@
     "scripts/actions/",
     "scripts/github_governance.py",
     "scripts/makefile_profile.py",
+    "scripts/pr_size_policy.py",
     "scripts/context_budget.py",
     "scripts/readme_ownership.py",
     "scripts/run-foundation-tests.sh",
@@ -68,6 +69,7 @@
     "scripts/tests/test_objective_prose_policy.py",
     "scripts/tests/test_presentation_skill_contract.py",
     "scripts/tests/test_private_repository_workflows.py",
+    "scripts/tests/test_pr_size_policy.py",
     "scripts/tests/test_template_sync_ignore.py",
     "scripts/tests/test_template_sync_ignore_portability.py",
     "scripts/tests/test_workflow_dependency_pins.py"
