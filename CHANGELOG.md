@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.3](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.2...v2.0.3) (2026-09-23)
+
+
+### Bug Fixes
+
+* **deps:** raise next to 15.5.24+ and sharp to 0.35.4 for Trivy findings ([3ea8a24](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/3ea8a240f5486cfa983511fd29df3d0c01242688))
+* **deps:** raise next to 15.5.24+ and sharp to 0.35.4 for Trivy findings ([50d6060](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/50d6060d95ee05d36c856c272ddd6244f801676c)), closes [#24](https://github.com/ea-Mitsuoka/nextjs-saas-template/issues/24)
+
 ## [2.0.2](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.1...v2.0.2) (2026-09-02)
 
 
