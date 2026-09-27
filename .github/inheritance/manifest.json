@@ -73,6 +73,7 @@
     "scripts/tests/test_canonical_target.py",
     "scripts/tests/test_setup_task_action.py",
     "scripts/tests/test_taskfile_profile.py",
+    "scripts/tests/test_parent_selection_guide.py",
     "scripts/tests/test_objective_prose_policy.py",
     "scripts/tests/test_presentation_skill_contract.py",
     "scripts/tests/test_private_repository_workflows.py",

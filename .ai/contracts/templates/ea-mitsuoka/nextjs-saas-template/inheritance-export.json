@@ -59,6 +59,7 @@
     "scripts/tests/test_canonical_target.py",
     "scripts/tests/test_setup_task_action.py",
     "scripts/tests/test_taskfile_profile.py",
+    "scripts/tests/test_parent_selection_guide.py",
     "scripts/tests/test_readme_ownership.py",
     "scripts/tests/test_setup_github_wrapper.py",
     "scripts/tests/test_template_inheritance.py",
