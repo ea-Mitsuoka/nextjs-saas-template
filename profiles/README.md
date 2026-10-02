@@ -5,7 +5,7 @@ title: Makefile Profiles — Canonical Command Contract
 
 # profiles/ — Makefile Reference Implementations
 
-The root [Makefile](../Makefile) ships as no-op placeholders. A **profile** is a
+The root [Taskfile.yml](../Taskfile.yml) implements the canonical tasks (ADR-0026). A **profile** is a
 reference implementation for a concrete stack: copy the profile's Makefile to the repo
 root, adjust paths, delete the placeholders — hooks, pre-commit, and CI start working
 unchanged.
