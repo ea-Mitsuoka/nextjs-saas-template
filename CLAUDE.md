@@ -50,15 +50,15 @@ All automation (you, hooks, CI) uses only these entry points — never call proj
 tooling directly, so commands stay stable across stacks:
 
 ```
-make setup   make format   make lint   make test   make test-unit
-make test-integration   make coverage   make build   make run
-make security-scan   make sbom   make clean   make doctor
+task setup   task format   task lint   task test   task test-unit
+task test-integration   task coverage   task build   task run
+task security-scan   task sbom   task clean   task doctor
 ```
 
 The full binding target contract (semantics of each) is in
 [profiles/README.md](profiles/README.md).
 
-Implementations live in the Makefile; on a fresh template they are no-op placeholders.
+Implementations live in the Taskfile.yml; on a fresh template they are no-op placeholders.
 
 ## 12. Claude Code integration
 

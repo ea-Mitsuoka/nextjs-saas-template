@@ -54,7 +54,7 @@ migrations and the Clerk webhook sync (which must write across tenant boundaries
 3. **Replace placeholders**: `grep -rn "{{" . --exclude-dir=.git --exclude-dir=node_modules`.
 4. **Configure services**: Clerk app + webhook endpoint, Stripe account, Cloud SQL
    instance; fill `.env` from [.env.example](.env.example).
-5. **Install gates**: `make setup`; verify with `make doctor && make lint && make test`.
+5. **Install gates**: `task setup`; verify with `task doctor && task lint && task test`.
 6. **Wire deploy**: provision `github-oidc` (see
    [gcp-cicd-workflows setup](https://github.com/ea-Mitsuoka/gcp-cicd-workflows#setup-once-per-consumer-repo)),
    copy its example callers.
