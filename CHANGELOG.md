@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.3...v3.0.0) (2026-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* make <target> no longer works at the repository root; run task <target>.
+
+### Features
+
+* replace the Makefile with a Taskfile (ADR-0026) ([7117d2b](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/7117d2b1319f2f99c463b95586daea5b47649928))
+
 ## [2.0.3](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.2...v2.0.3) (2026-09-23)
 
 
