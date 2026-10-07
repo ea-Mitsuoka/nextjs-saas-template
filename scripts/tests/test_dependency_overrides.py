@@ -27,15 +27,27 @@ class DependencyOverridesTest(unittest.TestCase):
             (3, 3, 18),
         )
 
-    def test_sharp_override_includes_libheif_fixes(self) -> None:
+    def test_sharp_override_includes_bundled_library_fixes(self) -> None:
         # GHSA-rgj7-g3m4-5g8c (HIGH): libheif vulnerabilities bundled by sharp < 0.35.4.
+        # GHSA-wq5f-xc86-pv6w (HIGH): librsvg vulnerability bundled by sharp < 0.35.5.
         package = json.loads((ROOT / "package.json").read_text())
         version = package["pnpm"]["overrides"].get("sharp")
 
         self.assertIsNotNone(version)
         self.assertGreaterEqual(
             tuple(int(part) for part in version.split(".")),
-            (0, 35, 4),
+            (0, 35, 5),
+        )
+
+    def test_source_map_js_override_includes_security_fix(self) -> None:
+        # CVE-2026-93749 (HIGH): denial of service in source-map-js < 1.2.2.
+        package = json.loads((ROOT / "package.json").read_text())
+        version = package["pnpm"]["overrides"].get("source-map-js")
+
+        self.assertIsNotNone(version)
+        self.assertGreaterEqual(
+            tuple(int(part) for part in version.split(".")),
+            (1, 2, 2),
         )
 
     def test_next_range_starts_at_rce_fix(self) -> None:
