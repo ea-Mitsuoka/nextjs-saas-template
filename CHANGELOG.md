@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.0.0](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.3...v3.0.0) (2026-10-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* make <target> no longer works at the repository root; run task <target>.
+
+### Features
+
+* **profiles:** replace the profile Makefiles with Taskfiles (ADR-0026) ([99ba37d](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/99ba37d4ac6f2bb89446c11882db5bdd908ed27f))
+* **profiles:** replace the profile Makefiles with Taskfiles (ADR-0026) ([e90f373](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/e90f3737438b4c706761313f6f9821e8166b2c66))
+* replace the Makefile with a Taskfile (ADR-0026) ([7117d2b](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/7117d2b1319f2f99c463b95586daea5b47649928))
+
+
+### Bug Fixes
+
+* **deps:** raise sharp to 0.35.5 and pin source-map-js 1.2.2 for Trivy findings ([138a998](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/138a998c98ede456ca75d02e078eb3024b5ccc51))
+* **deps:** raise sharp to 0.35.5 and pin source-map-js 1.2.2 for Trivy findings ([311a7d9](https://github.com/ea-Mitsuoka/nextjs-saas-template/commit/311a7d9cf72b721e008953ab2711f6bef3e5791a))
+
 ## [2.0.3](https://github.com/ea-Mitsuoka/nextjs-saas-template/compare/v2.0.2...v2.0.3) (2026-09-23)
 
 
